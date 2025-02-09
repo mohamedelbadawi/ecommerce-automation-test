@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ECommerceTestSuite">
+
+    <!-- Login Test Suite -->
+    <test name="LoginTests">
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <!-- Cart Test Suite -->
+    <test name="CartTests">
+        <classes>
+            <class name="tests.CartTest">
+                <methods>
+                    <include name="addProductToCart"/>
+                    <include name="removeProductFromCart"/>
+                    <include name="cartIsEmpty"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Quantity Test Suite -->
+    <test name="QuantityTest">
+        <classes>
+            <class name="tests.CartTest">
+                <methods>
+                    <include name="addProductToCartWithRandomQuantity"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
